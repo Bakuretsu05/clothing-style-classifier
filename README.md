@@ -1,4 +1,4 @@
-# 👕 Clothing Genre Classifier (CNN-based)
+# 👕 Clothing Style Classifier (CNN-based)
 
 ## 🧭 Project Overview
 
@@ -61,30 +61,6 @@ The input to the model is a **cropped upper-body image**, resized to **224×224 
 
 ---
 
-## 🧑‍💻 Team Roles (suggested)
-
-| Role               | Responsibility                                       |
-| :----------------- | :--------------------------------------------------- |
-| **Data Engineer**  | Collect and preprocess clothing images.              |
-| **Model Engineer** | Implement and fine-tune the CNN.                     |
-| **App Developer**  | Create and test the Gradio demo.                     |
-| **Reporter**       | Write documentation and prepare presentation slides. |
-
----
-
-## 🗓️ Timeline Summary
-
-| Week | Focus                                 |
-| :--- | :------------------------------------ |
-| 1    | Project setup, scope, and environment |
-| 2    | Dataset collection and cleaning       |
-| 3–4  | Model development and training        |
-| 5–6  | Fine-tuning and evaluation            |
-| 7    | Demo integration (Gradio)             |
-| 8    | Report and presentation preparation   |
-
----
-
 ## 🧰 Tech Stack
 
 -   **Language:** Python 3.11
@@ -102,6 +78,3 @@ The input to the model is a **cropped upper-body image**, resized to **224×224 
 -   Gradio Library Documentation
 
 ---
-
-> **Status:** Week 1 – Project Definition & Setup ✅  
-> Next Step → Dataset Selection and Preprocessing (Week 2)
