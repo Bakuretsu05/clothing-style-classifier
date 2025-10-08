@@ -1,0 +1,13 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore dataset and models
+data/
+models/
+checkpoints/
+
+# Ignore Colab and system files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
