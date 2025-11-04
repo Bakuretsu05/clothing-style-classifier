@@ -31,26 +31,26 @@ The input to the model is a **cropped upper-body image**, resized to **224×224 
 
 ## 📦 Deliverables
 
-| Item                          | Description                                                               |
-| :---------------------------- | :------------------------------------------------------------------------ |
-| **Trained CNN model (`.h5`)** | Final TensorFlow/Keras model saved in HDF5 format.                        |
-| **Gradio demo (`app.py`)**    | Interactive web interface for uploading an image and viewing predictions. |
-| **Report**                    | Technical report describing dataset, model design, results, and analysis. |
-| **Slides**                    | Presentation slides summarizing the workflow and findings.                |
+| Item                           | Description                                                               |
+| :----------------------------- | :------------------------------------------------------------------------ |
+| **Trained CNN model (`.pth`)** | Final PyTorch model saved in checkpoint format.                           |
+| **Gradio demo (`app.py`)**     | Interactive web interface for uploading an image and viewing predictions. |
+| **Report**                     | Technical report describing dataset, model design, results, and analysis. |
+| **Slides**                     | Presentation slides summarizing the workflow and findings.                |
 
 ---
 
 ## ⚙️ Model Configuration
 
-| Parameter          | Value                                      | Note                                      |
-| :----------------- | :----------------------------------------- | :---------------------------------------- |
-| **Input size**     | 224×224 px, RGB                            | Standard ImageNet input dimension         |
-| **Base CNN**       | MobileNetV3-Small (pretrained on ImageNet) | Lightweight and efficient for fine-tuning |
-| **Framework**      | TensorFlow / Keras                         | Beginner-friendly and Colab-compatible    |
-| **Output classes** | 7                                          | Clothing genre categories                 |
-| **Optimizer**      | Adam                                       | Fast and stable training                  |
-| **Loss function**  | Categorical Crossentropy                   | For multi-class classification            |
-| **Metrics**        | Accuracy, F1-Score (per class)             | Balanced evaluation                       |
+| Parameter          | Value                                      | Note                                           |
+| :----------------- | :----------------------------------------- | :--------------------------------------------- |
+| **Input size**     | 224×224 px, RGB                            | Standard ImageNet input dimension              |
+| **Base CNN**       | MobileNetV3-Small (pretrained on ImageNet) | Lightweight and efficient for fine-tuning      |
+| **Framework**      | PyTorch                                    | Flexible and efficient deep learning framework |
+| **Output classes** | 7                                          | Clothing genre categories                      |
+| **Optimizer**      | Adam                                       | Fast and stable training                       |
+| **Loss function**  | CrossEntropyLoss                           | For multi-class classification                 |
+| **Metrics**        | Accuracy, F1-Score (per class)             | Balanced evaluation                            |
 
 ---
 
@@ -64,7 +64,7 @@ The input to the model is a **cropped upper-body image**, resized to **224×224 
 ## 🧰 Tech Stack
 
 -   **Language:** Python 3.11
--   **Framework:** TensorFlow / Keras
+-   **Framework:** PyTorch
 -   **Base Model:** MobileNetV3-Small (ImageNet pretrained)
 -   **Tools:** OpenCV, NumPy, Pandas, Matplotlib, Scikit-Learn, Gradio
 -   **Dataset Sources:** DeepFashion 2, Clothing Dataset Full (Kaggle)
@@ -74,7 +74,7 @@ The input to the model is a **cropped upper-body image**, resized to **224×224 
 ## 🧠 References
 
 -   Hidayati, S.C. et al. (2012). _Clothing Genre Classification by Exploiting the Style Elements._
--   TensorFlow Transfer Learning Documentation
+-   PyTorch Transfer Learning Documentation
 -   Gradio Library Documentation
 
 ---

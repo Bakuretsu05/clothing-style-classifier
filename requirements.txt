@@ -1,8 +1,10 @@
-tensorflow==2.17.0
+torch>=2.0.0
+torchvision>=0.15.0
 opencv-python
 matplotlib
 pandas
 numpy
 scikit-learn
 gradio
+Pillow
 seaborn
