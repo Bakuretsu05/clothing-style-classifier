@@ -150,10 +150,10 @@ except Exception as e:
 def create_interface():
     """Create and launch Gradio interface."""
     
-    with gr.Blocks(title="👕 Clothing Style Classifier", theme=gr.themes.Soft()) as demo:
+    with gr.Blocks(title="👕 Wearly - Clothing Style Classifier", theme=gr.themes.Soft()) as demo:
         gr.Markdown(
             """
-            # 👕 Clothing Style Classifier
+            # 👕 Wearly - Clothing Style Classifier
             
             Upload an image of upper-body clothing to classify it into one of 7 categories:
             
@@ -165,7 +165,7 @@ def create_interface():
             - Hoodie
             - Jacket
             
-            The model uses a fine-tuned MobileNetV3-Small architecture trained on clothing images.
+            Wearly uses a fine-tuned MobileNetV3-Small architecture trained on clothing images.
             """
         )
         
